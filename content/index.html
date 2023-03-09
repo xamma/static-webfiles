@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to this site!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        color: #333333;
+        line-height: 1.5;
+      }
+      
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 50px 20px;
+      }
+      
+      h1 {
+        font-size: 48px;
+        margin-bottom: 30px;
+        color: #333333;
+        opacity: 0;
+        transform: translateY(-50px);
+        animation: fadeInDown 1s ease forwards;
+      }
+      
+      p {
+        margin-bottom: 20px;
+        opacity: 0;
+        transform: translateY(50px);
+        animation: fadeInUp 1s ease forwards;
+      }
+      
+      a {
+        color: #ff6f61;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+      
+      a:hover {
+        color: #ff8f7a;
+        text-decoration: underline;
+      }
+      
+      .gif {
+        text-align: center;
+      }
+      
+      @keyframes fadeInDown {
+        0% {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello there!</h1>
+      <p>Welcome to this website. I'm glad you're here!</p>
+	  <p>This is a test-page for Labs/Demos/Examples etc.</p>
+      <p>Visit me on GitHub at:</p>
+      <p><a href="https://github.com/xamma">https://github.com/xamma</a></p>
+      <div class="gif">
+        <img src="https://media3.giphy.com/media/73rRGJMa0giBEtUrDv/giphy.gif?cid=ecf05e47ggdu9zru95gmve1oi10fq1ng42bwm4kkzvvbed51&rid=giphy.gif&ct=s" alt="Robot waving" width="300">
+      </div>
+    </div>
+	<footer style="text-align: center; font-size: 14px; font-weight: bold; margin-top: 50px;">Made with &lt;3</footer>
+  </body>
+</html>
