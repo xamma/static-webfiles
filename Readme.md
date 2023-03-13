@@ -15,3 +15,23 @@ Theres no need to clone the whole repo, you can download each file with:
 ```
 click on the file > click 'raw' > right-click 'save as' > save to your computer
 ```
+
+### Containerization
+I couldn't hold myself back and added a small Docker-example :D  
+
+Build your own image
+```
+docker build -t static-web-container .
+```
+
+Run container
+```
+docker run -dp 80:80 static-web-container
+```
+
+Push to registry
+```
+docker login
+docker tag static-web-container <repouser>/<repo-name>:<tag>
+docker push <repouser>/<repo-name>:<tag>
+```
